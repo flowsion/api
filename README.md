@@ -7,7 +7,7 @@ Welcome to the Float API. Use this API to integrate with your favorite third par
 - Tasks
 - Holidays
 
-See: http://www.floatschedule.com for more info about Float
+See http://www.floatschedule.com for more info about Float.
 
 Ok, onto the important stuff:
 
@@ -16,13 +16,13 @@ Getting Setup
 
 This is a REST-style API that uses HTTP POST data and JSON for all responses. It uses OAuth 2 for authentication.
 
-All URLs start with: https://app.floatschedule.com/api/f1/
+All URLs start with 'https://app.floatschedule.com/api/f1/'
 
 F1 represents the version number. If we update the version, we'll update this number and continue to support those previous. 
 
 If you were to make a request for all people on your account it would look like this:
 
-https://app.floatschedule.com/api/f1/people
+'https://app.floatschedule.com/api/f1/people'
 
 
 Identify Yourself
@@ -43,6 +43,14 @@ Other Errors
 ------------
 
 Other errors you may see will start with 5xx, e.g. 502 Bad Gateway. Please hold and try your request again later.
+
+
+APIs
+----
+
+* [Projects](https://github.com/floatschedule/api/master/Sections/projects.md)
+
+
 
 API Improvements
 ----------------
