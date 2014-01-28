@@ -47,7 +47,7 @@ Other errors you may see will start with 5xx, e.g. 502 Bad Gateway. Please hold 
 APIs
 ----
 
-* [Projects](https://github.com/floatschedule/api/master/Sections/projects.md)
+* [Projects](https://github.com/floatschedule/api/blob/master/Sections/projects.md)
 
 
 
