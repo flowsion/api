@@ -1,15 +1,16 @@
 Float API
 =========
+
 Welcome to the Float API. Use this API to integrate with your favorite third party applications and share, create and update your Float data including: 
 
-- People
-- Projects 
-- Tasks
-- Holidays
+* [People](https://github.com/floatschedule/api/blob/master/Sections/people.md)
+* [Projects](https://github.com/floatschedule/api/blob/master/Sections/projects.md)
+* [Tasks](https://github.com/floatschedule/api/blob/master/Sections/tasks.md)
+* [Holidays](https://github.com/floatschedule/api/blob/master/Sections/holidays.md)
 
 See http://www.floatschedule.com for more info about Float.
 
-Ok, onto the important stuff:
+Now to the important stuff:
 
 Getting Setup
 -------------
@@ -18,18 +19,26 @@ This is a REST-style API that uses HTTP POST data and JSON for all responses. It
 
 All URLs start with `https://app.floatschedule.com/api/f1/`
 
-F1 represents the version number. If we update the version, we'll update this number and continue to support those previous. 
+'f1' represents the version number. If we update the version, we'll update this number and continue to support those previous. 
 
 If you were to make a request for all people on your account it would look like this:
 
 `https://app.floatschedule.com/api/f1/people`
+
+Content-Type must be defined in the header of requests that contain data:
+
+`Content-Type: application/x-www-form-urlencoded`
+
+The Accept header should be set to application/json since that is the supported return format of the API.
+
+`Accept: application/json`
 
 Identify Yourself
 -----------------
 
 We like to know who you are so we can contact you if there's any issues or opportunities. Please include a 'User-Agent' header with the name of your application and a contact email. Here's a sample:
 
-    User-Agent: Yaron's People Import Integration (yaron@pixelpaddock.com)
+`User-Agent: Yaron's People Import Integration (yaron@pixelpaddock.com)`
     
 
 Request Limits
@@ -42,13 +51,6 @@ Other Errors
 ------------
 
 Other errors you may see will start with 5xx, e.g. 502 Bad Gateway. Please hold and try your request again later.
-
-
-APIs
-----
-
-* [Projects](https://github.com/floatschedule/api/blob/master/Sections/projects.md)
-
 
 
 API Improvements
