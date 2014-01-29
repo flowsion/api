@@ -8,9 +8,9 @@ Welcome to the Float API. Use this API to integrate with your favorite third par
 * [Tasks](https://github.com/floatschedule/api/blob/master/Sections/tasks.md)
 * [Holidays](https://github.com/floatschedule/api/blob/master/Sections/holidays.md)
 
-See http://www.floatschedule.com for more info about Float.
+Visit http://www.floatschedule.com to learn more about Float.
 
-Now to the important stuff:
+Now onto the important stuff:
 
 Getting Setup
 -------------
