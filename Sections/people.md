@@ -4,105 +4,129 @@ Float People
 Get People
 ----------
 
-Return all account Projects.
+Return all account People.
 
-    `GET /projects` will return all active projects
-    `GET /projects/archived` will return all archived projects
-    
-A sample response:
-
-```
-[40]
-0:  {
-  project_id: "17740"
-  project_name: "Website"
-  vacation: "0"
-  color: "0095D8"
-  client_id: null
-  client_name: null
-}-
-1:  {
-  project_id: "14069"
-  project_name: "iPhone Application"
-  vacation: "0"
-  color: "f982cb"
-  client_id: null
-  client_name: null
-}
-```
-
-Get Project
------------
-
-Return a specific project identified by the Project id.
-
-    `GET /projects/1` will return the specific project with the id 1.
+    `GET /people` will return all active people
+    `GET /projects/reserve` will return all people on the reserve
     
 A sample response:
 
 ```
 {
-  project_id: "1",
-  project_name: "Microsite",
-  vacation: "0",
-  color: "7448d2",
-  client_id: "3",
-  client_name: "Joe's Wares"
+people: [
+{
+    people_id: "299",
+    first_name: "Abel",
+    last_name: "Anderson",
+    job_title: "Designer",
+    avatar_file: "avatar-299",
+    department_name: "Creative",
+    department_id: "166",
+    skills: [
+        {
+            name: "LEADERSHIP",
+            level: 3
+        },
+        {
+            name: "PLANNING",
+            level: 2
+        },
+        {
+            name: "RIDING BIKES",
+            level: 1
+        },
+        {
+            name: "SEM",
+            level: 3
+},
+{
+    people_id: "302",
+    first_name: "Aallan",
+    last_name: "Armstrong",
+    job_title: "Creative Director",
+    avatar_file: "avatar-3021372114097",
+    department_name: "Creative",
+    department_id: "166",
+    skills: [ ]
+},
 }
 ```
 
-Create Project
---------------
+Get Person
+----------
 
-Create a new project within your existing account.
+Return a specific person identified by the people id.
 
-    `POST /projects`
+    `GET /people/1` will return the specific person with the id 1.
+    
+A sample response:
+
+```
+{
+    people_id: "1",
+    first_name: "Rachel",
+    last_name: "Hammond",
+    job_title: "Designer",
+    avatar_file: "avatar-1",
+    department_name: "Creative",
+    department_id: "2",
+    skills: "css:3|Flash:1|Photoshop:2|design:2"
+}
+```
+
+Add Person
+-------------
+
+Add a new person within your existing account.
+
+    `POST /people`
   
 ```
 {
-  project_name: "Texas Ranger Site",
-  color: "7448d2",
-  client_name: "Walker"
+    first_name: "Rachel",
+    last_name: "Hammond",
+    job_title: "Designer",
+    email: "rachel.hammond@float.com"
 }
 ```
 
-A successful creation will return a `201 Created` response.
+A successful addition will return a `201 Created` response.
 
-Update Project
---------------
+Update Person
+-------------
 
-Update an existing project within your account.
+Update an existing person within your account.
 
-    `PUT /projects/1` will update the project with the id 1.
+    `PUT /people/1` will update the person with the id 1.
 
 ```
 {
-  project_name: "New Site Name",
-  color: "7448d2",
-  client_name: "New Client Name"
+    first_name: "New First Name",
+    last_name: "New Last Name",
+    email: "newfirstname.newlastname@float.com"
 }
 ```
   
-Archive or Return to Active Project
------------------------------------
+Move to Reserve or Return to Active Person
+------------------------------------------
 
-This will either archive or return to active a specified project.
+This will either move a person to the reserve or return them to active.
 
-    `PUT /projects/1` will archive the project with the id 1.
+    `PUT /people/1` will move the person to the reserve with the id 1.
     
 ```
 {
-  archived: "true"
+  reserve: "true"
 }
 ```
 
-Change true to false to return the project from archived to active.
+Change true to false to return the person from the reserve to active.
 
-Delete Project
---------------
+Delete Person
+-------------
 
-This will delete a specific project.
+This will delete a specific person.
 
-    `DELETE /projects/1` will delete the project with the ID 1.
+    `DELETE /people/1` will delete the person with the id 1.
     
 On success this will return a `204 No Content` response.
