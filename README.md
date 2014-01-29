@@ -17,13 +17,13 @@ Getting Setup
 
 This is a REST-style API that uses HTTP POST data and JSON for all responses. It uses OAuth 2 for authentication.
 
-All URLs start with `https://app.floatschedule.com/api/f1/`
+All URLs start with `https://app.floatschedule.com/api/v1/`
 
-'f1' represents the version number. If we update the version, we'll update this number and continue to support those previous. 
+'v1' represents the version number. If we update the version, we'll update this number and continue to support those previous. 
 
 If you were to make a request for all people on your account it would look like this:
 
-`https://app.floatschedule.com/api/f1/people`
+`https://app.floatschedule.com/api/v1/people`
 
 Content-Type must be defined in the header of requests that contain data:
 
