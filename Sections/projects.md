@@ -4,7 +4,7 @@ Float Projects
 Get Projects
 ------------
 
-This will return all account Projects.
+Return all account Projects.
 
     `GET /projects` will return all active projects
     `GET /projects/archived` will return all archived projects
@@ -34,11 +34,12 @@ A sample response:
 Get Project
 -----------
 
-This will return a specific project identified by the Project ID.
+Return a specific project identified by the Project id.
 
-    `GET /projects/1` will return the specific project with the ID 1.
+    `GET /projects/1` will return the specific project with the id 1.
     
 A sample response:
+
 ```
 {
   project_id: "1",
@@ -53,7 +54,7 @@ A sample response:
 Create Project
 --------------
 
-This will create a new project within your existing account.
+Create a new project within your existing account.
 
     `POST /projects`
   
@@ -65,14 +66,14 @@ This will create a new project within your existing account.
 }
 ```
 
-On success this will return a `201 Created` response.
+A successful creation will return a `201 Created` response.
 
 Update Project
 --------------
 
-This will update an existing project within your account.
+Update an existing project within your account.
 
-    `PUT /projects/1` will update the project with the ID 1.
+    `PUT /projects/1` will update the project with the id 1.
 
 ```
 {
@@ -82,12 +83,12 @@ This will update an existing project within your account.
 }
 ```
   
-Archiving or Returning to Active Projects
------------------------------------------
+Archive or Return to Active Project
+-----------------------------------
 
 This will either archive or return to active a specified project.
 
-    `PUT /projects/1` will archive Project ID 1.
+    `PUT /projects/1` will archive the project with the id 1.
     
 ```
 {
@@ -95,7 +96,7 @@ This will either archive or return to active a specified project.
 }
 ```
 
-Change true to false to return the project to active.
+Change true to false to return the project from archived to active.
 
 Delete Project
 --------------
