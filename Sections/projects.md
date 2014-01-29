@@ -103,6 +103,6 @@ Delete Project
 
 This will delete a specific project.
 
-    `DELETE /projects/1` will delete the project with the ID 1.
+    `DELETE /projects/1` will delete the project with the id 1.
     
 On success this will return a `204 No Content` response.
