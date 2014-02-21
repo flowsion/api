@@ -17,13 +17,13 @@ Getting Setup
 
 This is a REST-style API that uses HTTP POST data and JSON for all responses. It uses OAuth 2 for authentication.
 
-All URLs start with `https://app.floatschedule.com/api/v1/`
+All URLs start with `https://api.floatschedule.com/api/v1/`
 
 'v1' represents the version number. If we update the version, we'll update this number and continue to support those previous. 
 
 If you were to make a request for all people on your account it would look like this:
 
-`https://app.floatschedule.com/api/v1/people`
+`https://api.floatschedule.com/api/v1/people`
 
 Content-Type must be defined in the header of requests that contain data:
 
@@ -44,13 +44,13 @@ We like to know who you are so we can contact you if there's any issues or oppor
 Request Limits
 --------------
 
-You can make up to 6 requests a second from the same account. Following this you will receive a '429 Error: too many requests by this user'. You will need to wait 30 minutes before attempting another request.
+You can make up to 100 requests a minute from the same account. Following this you will receive a '429 Error: too many requests by this user'. You will need to wait 30 minutes before attempting another request.
 
 
 Other Errors
 ------------
 
-Other errors you may see will start with 5xx, e.g. 502 Bad Gateway. Please hold and try your request again later.
+Other errors you may see will start with 5xx, e.g. 500 Internal Server Error. Please hold and try your request again later. If the error persists please contact support@floatschedule.com.
 
 
 API Improvements
