@@ -144,4 +144,4 @@ This will delete a specific task.
 
     `DELETE /tasks/142425` will delete the task with the id 142425.
     
-On success this will return a `204 No Content` response.
+On success this will return a `200 Ok` response.
