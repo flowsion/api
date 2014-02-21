@@ -20,8 +20,12 @@ people: [
     last_name: "Anderson",
     job_title: "Designer",
     avatar_file: "avatar-299",
-    department_name: "Creative",
-    department_id: "166",
+    departments: [
+        {
+            name: "Creative",
+            id: "4"
+        }
+        ],
     skills: [
         {
             name: "LEADERSHIP",
@@ -38,6 +42,12 @@ people: [
         {
             name: "SEM",
             level: 3
+        ],
+    email: "abel@pixelpaddock.com",
+    description: "This is a description.",
+    mobile: "212 444 1221",
+    telephone: "333 222 1111",
+    im: "abel1"
 },
 {
     people_id: "302",
@@ -45,9 +55,18 @@ people: [
     last_name: "Armstrong",
     job_title: "Creative Director",
     avatar_file: "avatar-3021372114097",
-    department_name: "Creative",
-    department_id: "166",
-    skills: [ ]
+    departments: [
+        {
+            name: "Creative",
+            id: "5"
+        }
+        ],
+    skills: [ ],
+    email: "aallan@pixelpaddock.com",
+    description: "This is a description.",
+    mobile: "212 444 1222",
+    telephone: "333 222 1123",
+    im: "aallaniam"
 },
 }
 ```
@@ -107,20 +126,15 @@ Update an existing person within your account.
 }
 ```
   
-Move to Reserve or Return to Active Person
-------------------------------------------
+People on the Reserve
+---------------------
 
-This will either move a person to the reserve or return them to active.
+To access people on the reserve add the query string `&active=0`. Sample URL:
 
-    `PUT /people/1` will move the person to the reserve with the id 1.
+    http://stage-app.floatschedule.com/api/v1/people?key=11111111111111111111111111111111&active=0
     
-```
-{
-  reserve: "true"
-}
-```
 
-Change true to false to return the person from the reserve to active.
+Change `&active=1` to view all active people.
 
 Delete Person
 -------------
