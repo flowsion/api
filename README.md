@@ -36,7 +36,7 @@ The Accept header should be set to application/json since that is the supported 
 Identify Yourself
 -----------------
 
-We like to know who you are so we can contact you if there's any issues or opportunities. Please include a 'User-Agent' header with the name of your application and a contact email. Here's a sample:
+We like to know who you are so we can contact you if there's any issues. Please include a 'User-Agent' header with the name of your application and a contact email. Here's a sample:
 
 `User-Agent: Yaron's People Import Integration (yaron@pixelpaddock.com)`
     
@@ -50,7 +50,7 @@ You can make up to 100 requests a minute from the same account. Following this y
 Other Errors
 ------------
 
-Other errors you may see will start with 5xx, e.g. 500 Internal Server Error. Please hold and try your request again later. If the error persists please contact support@floatschedule.com.
+Other errors you may see will start with 5xx, e.g. 500 Internal Server Error. Please hold and try your request again later. If the error persists please contact us at the email below.
 
 
 API Improvements
