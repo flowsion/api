@@ -78,4 +78,4 @@ This will delete a specific holiday.
 
     `DELETE /holidays/1533` will delete the task with the id 1533.
     
-On success this will return a `204 No Content` response.
+On success this will return a `200 Ok` response.
