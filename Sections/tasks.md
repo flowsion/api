@@ -20,31 +20,31 @@ A sample response:
   people_id: "246",
   tasks: [
   {
-    task_id: "142457",
-    task_name: "mmm",
-    people_id: "246",
-    project_id: "38",
-    client_name: "Walker",
-    week_start_date: "2014-01-26",
-    creation_doy: "340",
-    start_date: "2013-11-29",
-    start_doy: "333",
+    task_id: "252806",
+    task_name: "Design",
+    people_id: "1",
+    project_id: "880",
+    client_name: "Happy times",
+    week_start_date: "2014-02-16",
+    creation_doy: "48",
+    start_date: "2014-02-17",
+    start_doy: "48",
     start_yr: "2014",
-    end_date: "2014-02-05",
-    end_doy: "36",
-    block_start_date: "2014-01-27",
-    block_start_doy: "27",
-    block_end_doy: "31",
-    block_end_date: "2014-01-31",
+    end_date: "2014-02-27",
+    end_doy: "58",
+    block_start_date: "2014-02-17",
+    block_start_doy: "48",
+    block_end_doy: "52",
+    block_end_date: "2014-02-21",
     block_len: "5",
-    hours_pd: "8.0",
-    total_hours: "392.0",
-    task_days: "49",
-    task_cal_days: "69",
+    hours_pd: "2.0",
+    total_hours: "18.0",
+    task_days: "9",
+    task_cal_days: "11",
     created_by: "Glenn Rogers",
     creator_id: "2",
     modified_by: "Glenn Rogers",
-    project_name: "Nylon",
+    project_name: "My New Project",
     sked_admin: "true",
     is_owner: "true",
     priority: 0
@@ -56,14 +56,14 @@ Get Task
 
 Return a specific task identified by the task id.
 
-    `GET /tasks/142425` will return the specific task with the id 142.
+    `GET /tasks/142425` will return the specific task with the id 142425.
     
 A sample response:
 
 ```
 {
   task_id: "142425",
-  task_name: "",
+  task_name: "Art Direction",
   people_id: "259",
   project_id: "38",
   client_name: "Walker",
