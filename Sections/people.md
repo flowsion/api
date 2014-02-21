@@ -129,12 +129,10 @@ Update an existing person within your account.
 People on the Reserve
 ---------------------
 
-To access people on the reserve add the query string `&active=0`. Sample URL:
-
-    http://stage-app.floatschedule.com/api/v1/people?key=11111111111111111111111111111111&active=0
-    
+To access people on the reserve add the query string `&active=0`.
 
 Change `&active=1` to view all active people.
+
 
 Delete Person
 -------------
