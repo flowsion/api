@@ -2,12 +2,14 @@
 
 <p>See additional JSON output examples <a href="https://github.com/floatschedule/api/blob/master/Sections/data-reference.md">here</a></p>
 
+Get People
+----------
+
 	GET /people
-will return all active people
+will return all active people.
 
     
 A sample response:
-
 ```json
 {
 	"people": [
@@ -22,7 +24,7 @@ A sample response:
 				"name": "Creative",
 				"id": "4"
 			}
-			],
+		],
 		"skills": [
 			{
 				"name": "LEADERSHIP",
@@ -48,13 +50,19 @@ A sample response:
 }
 ```
 
+<h3>People on the Reserve vs Active</h3>
+
+To access people on the **reserve** add the query string: `&active=0`.
+
+Use: `&active=1` to view all **active** people.
+
 Get Person
 ----------
 
 Return a specific person identified by the people id.
 
-	GET /people/1
-will return the specific person with the id 1.
+	GET /people/123
+will return the specific person with the id 123.
     
 A sample response:
 
@@ -85,47 +93,49 @@ Add Person
 
 Add a new person within your existing account.
 
-    `POST /people`
-  
-```
+    POST /people
+POST requests must be _application/x-www-form-urlencoded_ in name/value pairs. Data must also be URL encoded as appropriate.
+
+Sample request:
+
+	first_name=Rachel&last_name=Hammond&job_title=Designer&email=rachel.hammond%40float.com
+
+Valid fields with example values:
+
+    first_name=Rachel&
+    last_name=Hammond&
+    job_title=Designer&
+    email=rachel.hammond@float.com
+    department_id=2
+	skills=Photoshop,Illustrator
+
+A successful create record will return a `201 Created` response status with the new id:
+
+```json
 {
-    first_name: "Rachel",
-    last_name: "Hammond",
-    job_title: "Designer",
-    email: "rachel.hammond@float.com"
+	"people_id":"9836"
 }
 ```
-
-A successful addition will return a `201 Created` response.
 
 Update Person
 -------------
 
 Update an existing person within your account.
 
-    `PUT /people/1` will update the person with the id 1.
+    PUT /people/123
+will update the person with the id 123.
+PUT requests must be _application/x-www-form-urlencoded_ in name/value pairs. Data must also be URL encoded as appropriate.
 
-```
-{
-    first_name: "New First Name",
-    last_name: "New Last Name",
-    email: "newfirstname.newlastname@float.com"
-}
-```
-  
-People on the Reserve
----------------------
+	Update format and field values are the same as create, see above.
 
-To access people on the reserve add the query string `&active=0`.
-
-Change `&active=1` to view all active people.
-
+A successful update will return a `200 Ok` response status.
 
 Delete Person
 -------------
 
-This will delete a specific person.
+Delete a specific person.
 
-    `DELETE /people/1` will delete the person with the id 1.
+    DELETE /people/123
+will delete the person with the id 123. _Warning: deletes can not be undone and data can not be recovered, please use with care._
     
-On success this will return a `200 Ok` response.
+A successful delete will return a `200 Ok` response status.
