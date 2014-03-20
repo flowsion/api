@@ -102,9 +102,9 @@ Sample request:
 
 Valid fields with example values:
 
-    first_name=Rachel&
-    last_name=Hammond&
-    job_title=Designer&
+    first_name=Rachel
+    last_name=Hammond
+    job_title=Designer
     email=rachel.hammond@float.com
     department_id=2
 	skills=Photoshop,Illustrator
