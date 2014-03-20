@@ -1,7 +1,6 @@
 People
 ======
 
-See additional JSON output examples <a href="https://github.com/floatschedule/api/blob/master/Sections/data-reference.md">here</a>
 
 Get People
 ----------
