@@ -1,6 +1,7 @@
-<h1 id="people">People</h1>
+People
+======
 
-<p>See additional JSON output examples <a href="https://github.com/floatschedule/api/blob/master/Sections/data-reference.md">here</a></p>
+See additional JSON output examples <a href="https://github.com/floatschedule/api/blob/master/Sections/data-reference.md">here</a>
 
 Get People
 ----------
