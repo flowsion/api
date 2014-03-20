@@ -38,13 +38,13 @@ Identify Yourself
 
 We like to know who you are so we can contact you if there's any issues. Please include a 'User-Agent' header with the name of your application and a contact email. Here's a sample:
 
-`User-Agent: Yaron's People Import Integration (yaron@pixelpaddock.com)`
+`User-Agent: Yaron's People Import Integration (techie@pixelpaddock.com)`
     
 
 Request Limits
 --------------
 
-You can make up to 100 requests a minute from the same account. Following this you will receive a '429 Error: too many requests by this user'. You will need to wait 30 minutes before attempting another request.
+You can make up to 200 requests a minute from the same account. Following this you will receive a '429 Error: too many requests by this user'. You will need to wait a brief period before attempting additional requests.
 
 
 Other Errors

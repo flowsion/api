@@ -1,12 +1,10 @@
-Float People
-============
+<h1 id="people">People</h1>
 
-Get People
-----------
+<p>See full JSON output examples <a href="https://github.com/floatschedule/api/data-reference.md">here</a></p>
 
-Return all account People.
+<ul>
+<li><code>GET /people</code> will return all active people
 
-    `GET /people` will return all active people
     `GET /projects/reserve` will return all people on the reserve
     
 A sample response:
