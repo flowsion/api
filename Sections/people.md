@@ -1,7 +1,6 @@
 People
 ======
 
-See additional JSON output examples <a href="https://github.com/floatschedule/api/blob/master/Sections/data-reference.md">here</a>
 
 Get People
 ----------
@@ -103,9 +102,9 @@ Sample request:
 
 Valid fields with example values:
 
-    first_name=Rachel&
-    last_name=Hammond&
-    job_title=Designer&
+    first_name=Rachel
+    last_name=Hammond
+    job_title=Designer
     email=rachel.hammond@float.com
     department_id=2
 	skills=Photoshop,Illustrator
