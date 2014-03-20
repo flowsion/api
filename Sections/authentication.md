@@ -1,5 +1,0 @@
-Float API Authentication
-========================
-
-
-
