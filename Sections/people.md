@@ -1,71 +1,50 @@
 <h1 id="people">People</h1>
 
-<p>See full JSON output examples <a href="https://github.com/floatschedule/api/data-reference.md">here</a></p>
+<p>See full JSON output examples <a href="https://github.com/floatschedule/api/blob/master/Sections/data-reference.md">here</a></p>
 
 <ul>
 <li><code>GET /people</code> will return all active people
 
-    `GET /projects/reserve` will return all people on the reserve
     
 A sample response:
 
-```
+```json
 {
-people: [
-{
-    people_id: "299",
-    first_name: "Abel",
-    last_name: "Anderson",
-    job_title: "Designer",
-    avatar_file: "avatar-299",
-    departments: [
-        {
-            name: "Creative",
-            id: "4"
-        }
-        ],
-    skills: [
-        {
-            name: "LEADERSHIP",
-            level: 3
-        },
-        {
-            name: "PLANNING",
-            level: 2
-        },
-        {
-            name: "RIDING BIKES",
-            level: 1
-        },
-        {
-            name: "SEM",
-            level: 3
-        ],
-    email: "abel@pixelpaddock.com",
-    description: "This is a description.",
-    mobile: "212 444 1221",
-    telephone: "333 222 1111",
-    im: "abel1"
-},
-{
-    people_id: "302",
-    first_name: "Aallan",
-    last_name: "Armstrong",
-    job_title: "Creative Director",
-    avatar_file: "avatar-3021372114097",
-    departments: [
-        {
-            name: "Creative",
-            id: "5"
-        }
-        ],
-    skills: [ ],
-    email: "aallan@pixelpaddock.com",
-    description: "This is a description.",
-    mobile: "212 444 1222",
-    telephone: "333 222 1123",
-    im: "aallaniam"
-},
+	people: [
+	{
+		people_id: "299",
+		first_name: "Abel",
+		last_name: "Anderson",
+		job_title: "Designer",
+		avatar_file: "avatar-299",
+		departments: [
+			{
+				name: "Creative",
+				id: "4"
+			}
+			],
+		skills: [
+			{
+				name: "LEADERSHIP",
+				level: 3
+			},
+			{
+				name: "PLANNING",
+				level: 2
+			}
+		],
+		email: "abel@pixelpaddock.com",
+		description: "This is a description.",
+		mobile: "212 444 1221",
+		telephone: "333 222 1111",
+		im: "abel1"
+	},
+	{
+		people_id: "302",
+		first_name: "Aallan",
+		last_name: "Armstrong",
+		job_title: "Creative Director",
+		...
 }
 ```
 
