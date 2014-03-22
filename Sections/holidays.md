@@ -1,24 +1,27 @@
-Float Holidays
-==============
+Holidays
+========
 
 Get Holidays
 ------------
 
-Return all account holidays.
+	GET /holidays
+will return all holidays.
 
-    `GET /holidays` will return all holidays
     
 A sample response:
-
-```
-[
+```json
 {
-  holiday_id: "1533",
-  holiday_name: "April Fool's Day",
-  date: "2014-04-01",
-  date_doy: "31"
+        "holiday_id": "1533",
+        "holiday_name": "April Fool's Day",
+        "date": "2014-04-01",
+        "date_doy": "31"
+        }
+        "holiday_id": "1534",
+        "holiday_name": "Independence Day",
+        "date": "2014-07-04",
+        "date_doy": "55"
+        ...
 }
-]
 ```
 
 Get Holiday
@@ -26,19 +29,18 @@ Get Holiday
 
 Return a specific holiday identified by the holiday id.
 
-    `GET /holidays/1533` will return the specific holiday with the id 1533.
+	GET /holidays/1533
+will return the specific holiday with the id 1533.
     
 A sample response:
 
-```
-[
+```json
 {
-  holiday_id: "1533",
-  holiday_name: "April Fool's Day",
-  date: "2014-04-01",
-  date_doy: "31"
+    "holiday_id": "1533",
+    "holiday_name": "April Fool's Day",
+    "date": "2014-04-01",
+    "date_doy": "31"
 }
-]
 ```
 
 Add Holiday
@@ -46,36 +48,46 @@ Add Holiday
 
 Add a new holiday within your existing account.
 
-    `POST /holidays`
-  
-```
+    POST /holidays
+POST requests must be _application/x-www-form-urlencoded_ in name/value pairs. Data must also be URL encoded as appropriate.
+
+Sample request:
+
+	holiday_name=New_Holiday&date=2014-07-01&date_doy=99
+
+Valid fields with example values:
+
+    holiday_name=New Holiday
+    date=2014-07-01
+    date_doy=99
+
+A successful create record will return a `201 Created` response status with the new id:
+
+```json
 {
-  holiday_name: "Memorial Day",
-  date: "2014-05-26",
+	"holiday_id":"1536"
 }
 ```
-
-A successful addition will return a `201 Created` response.
 
 Update Holiday
 --------------
 
 Update an existing holiday within your account.
 
-    `PUT /holidays/1533` will update the holiday with the id 1533.
+    PUT /holidays/2324
+will update the person with the id 2324.
+PUT requests must be _application/x-www-form-urlencoded_ in name/value pairs. Data must also be URL encoded as appropriate.
 
-```
-{
-  holiday_name: "Updated Holiday Name",
-  date: "2014-04-05",
-}
-```
+	Update format and field values are the same as create, see above.
+
+A successful update will return a `200 Ok` response status.
 
 Delete Holiday
 --------------
 
-This will delete a specific holiday.
+Delete a specific holiday.
 
-    `DELETE /holidays/1533` will delete the task with the id 1533.
+    DELETE /holidays/2324
+will delete the person with the id 2324. _Warning: deletes can not be undone and data can not be recovered, please use with care._
     
-On success this will return a `200 Ok` response.
+A successful delete will return a `200 Ok` response status.
