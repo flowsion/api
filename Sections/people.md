@@ -89,7 +89,7 @@ A sample response:
 ```
 
 Add Person
--------------
+----------
 
 Add a new person within your existing account.
 
