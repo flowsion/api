@@ -23,7 +23,7 @@ A sample response:
             "client_name": "Violet City",
             "tags": [
 		        	{        
-                        "IPHONE APP"
+                        "IPHONE APP",
                         "MEDIUM"
                 	}
 		       ],
