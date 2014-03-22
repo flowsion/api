@@ -60,13 +60,13 @@ Get Task
 Return a specific task identified by the task id.
 
 	GET /tasks/123434
-will return the specific task with the id 123.
+will return the specific task with the id 123434.
     
 A sample response:
 
 ```json
 {
-    "task_id": "214809",
+    "task_id": "123434",
     "task_name": "User Experience",
     "task_notes": "Reference wireframes doc.",
     "people_id": "236",
