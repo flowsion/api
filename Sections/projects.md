@@ -29,16 +29,16 @@ A sample response:
 		       ],
             "project_managers": [
                     {
-                        "account_id": "135"
-                        "name": "Glenn Baron"
+                        "account_id": "135",
+                        "name": "Glenn Baron",
                         "email": "float@pixelpaddock.com"
                   	}
 		       ]
 	},
 	{		       
-            "project_id": "224"
-            "project_name": "Microsite"
-            "description": "For an existing client."	
+            "project_id": "224",
+            "project_name": "Microsite",
+            "description": "For an existing client.",	
 		...
 }
 ```
@@ -70,14 +70,14 @@ A sample response:
     "client_name": "Violet City",
         "tags": [
 	        {        
-                "IPHONE APP"
+                "IPHONE APP",
                 "MEDIUM"
         	}
 	        ],
         "project_managers": [
             {
-                "account_id": "135"
-                "name": "Glenn Baron"
+                "account_id": "135",
+                "name": "Glenn Baron",
                 "email": "float@pixelpaddock.com"
           	}
 	    ]
