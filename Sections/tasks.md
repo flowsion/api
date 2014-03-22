@@ -13,7 +13,6 @@ A sample response:
 
 ```json
 {
-    {
     "position": "full",
     "start_doy": "75",
     "start_yr": "2014",
