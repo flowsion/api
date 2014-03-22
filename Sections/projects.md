@@ -66,7 +66,7 @@ A sample response:
     "description": "Marquee project for us. Need to consider a contractor with app dev skills.",
     "vacation": "0",
     "color": "9e7fba",
-    "client_id": "212"
+    "client_id": "212",
     "client_name": "Violet City",
         "tags": [
 	        {        
