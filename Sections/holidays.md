@@ -15,7 +15,8 @@ A sample response:
         "holiday_name": "April Fool's Day",
         "date": "2014-04-01",
         "date_doy": "31"
-        }
+        },
+        {
         "holiday_id": "1534",
         "holiday_name": "Independence Day",
         "date": "2014-07-04",
@@ -75,7 +76,7 @@ Update Holiday
 Update an existing holiday within your account.
 
     PUT /holidays/2324
-will update the person with the id 2324.
+will update the holiday with the id 2324.
 PUT requests must be _application/x-www-form-urlencoded_ in name/value pairs. Data must also be URL encoded as appropriate.
 
 	Update format and field values are the same as create, see above.
@@ -88,6 +89,6 @@ Delete Holiday
 Delete a specific holiday.
 
     DELETE /holidays/2324
-will delete the person with the id 2324. _Warning: deletes can not be undone and data can not be recovered, please use with care._
+will delete the holiday with the id 2324. _Warning: deletes can not be undone and data can not be recovered, please use with care._
     
 A successful delete will return a `200 Ok` response status.
