@@ -14,13 +14,13 @@ A sample response:
 {
 	"projects": [
 	{
-            "project_id": "223"
-            "project_name": "iPhone App"
-            "description": "Marquee project for us. Need to consider a contractor with app dev skills."
-            "vacation": "0"
-            "color": "9e7fba"
-            "client_id": "212"
-            "client_name": "Violet City"
+            "project_id": "223",
+            "project_name": "iPhone App",
+            "description": "Marquee project for us. Need to consider a contractor with app dev skills.",
+            "vacation": "0",
+            "color": "9e7fba",
+            "client_id": "212",
+            "client_name": "Violet City",
             "tags": [
 		        	{        
                         "IPHONE APP"
@@ -33,7 +33,7 @@ A sample response:
                         "name": "Glenn Baron"
                         "email": "float@pixelpaddock.com"
                   	}
-		       ],
+		       ]
 	},
 	{		       
             "project_id": "224"
@@ -61,13 +61,13 @@ A sample response:
 
 ```json
 {
-    "project_id": "223"
-    "project_name": "iPhone App"
-    "description": "Marquee project for us. Need to consider a contractor with app dev skills."
-    "vacation": "0"
-    "color": "9e7fba"
+    "project_id": "223",
+    "project_name": "iPhone App",
+    "description": "Marquee project for us. Need to consider a contractor with app dev skills.",
+    "vacation": "0",
+    "color": "9e7fba",
     "client_id": "212"
-    "client_name": "Violet City"
+    "client_name": "Violet City",
         "tags": [
 	        {        
                 "IPHONE APP"
