@@ -132,7 +132,7 @@ A successful create record will return a `201 Created` response status with the 
 Update Task
 -----------
 
-Update an existing person within your account.
+Update an existing task within your account.
 
     PUT /tasks/343444
 will update the task with the id 343444.
