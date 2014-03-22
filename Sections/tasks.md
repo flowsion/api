@@ -66,7 +66,7 @@ will return the specific task with the id 123.
 A sample response:
 
 ```json
-}
+{
     "task_id": "214809",
     "task_name": "User Experience",
     "task_notes": "Reference wireframes doc.",
