@@ -102,7 +102,7 @@ Valid fields with example values:
     description=Important job for client.
     color=9e7fba
     client_id=2
-	    tags=Microsite,Medium
+    tags=Microsite,Medium
 
 A successful create record will return a `201 Created` response status with the new id:
 
