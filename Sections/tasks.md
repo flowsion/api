@@ -1,54 +1,58 @@
 Float Tasks
 ===========
 
-Get Task
---------
 
-Return all account tasks.
+Get Tasks
+---------
 
-    `GET /tasks` will return all tasks
+	GET /tasks
+will return all active tasks.
+
     
 A sample response:
 
-```
+```json
 {
-  position: "full",
-  start_doy: "26",
-  start_yr: "2014",
-  people: [
-{
-  people_id: "246",
-  tasks: [
-  {
-    task_id: "252806",
-    task_name: "Design",
-    people_id: "1",
-    project_id: "880",
-    client_name: "Happy times",
-    week_start_date: "2014-02-16",
-    creation_doy: "48",
-    start_date: "2014-02-17",
-    start_doy: "48",
-    start_yr: "2014",
-    end_date: "2014-02-27",
-    end_doy: "58",
-    block_start_date: "2014-02-17",
-    block_start_doy: "48",
-    block_end_doy: "52",
-    block_end_date: "2014-02-21",
-    block_len: "5",
-    hours_pd: "2.0",
-    total_hours: "18.0",
-    task_days: "9",
-    task_cal_days: "11",
-    created_by: "Glenn Rogers",
-    creator_id: "2",
-    modified_by: "Glenn Rogers",
-    project_name: "My New Project",
-    sked_admin: "true",
-    is_owner: "true",
-    priority: 0
-},
+    {
+    "position": "full",
+    "start_doy": "75",
+    "start_yr": "2014",
+    "people": [
+    {
+        "people_id": "236",
+        "tasks":
+        {
+            "task_id": "214809",
+            "task_name": "Design",
+            "task_notes": "See related ticket.",
+            "people_id": "236",
+            "project_id": "364",
+            "client_name": "Violet City",
+            "creation_doy": "10",
+            "start_date": "2014-03-17",
+            "start_doy": "76",
+            "start_yr": "2014",
+            "end_date": "2014-03-21",
+            "end_doy": "80",
+            "hours_pd": "8.0",
+            "total_hours": "40.0",
+            "task_days": "5",
+            "task_cal_days": "5",
+            "created_by": "Glenn Baron",
+            "creator_id": "135",
+            "modified_by": "Glenn Baron",
+            "project_name": "iPhone App",
+            "priority": 0,
+        }
+        {
+            "task_id": "283660",
+            "task_name": "Art Direction",
+            "task_notes": null,
+            "people_id": "236",
+            "project_id": "364",
+            "client_name": "Violet City",
+        ...
+}
 ```
 
 Get Task
@@ -56,35 +60,35 @@ Get Task
 
 Return a specific task identified by the task id.
 
-    `GET /tasks/142425` will return the specific task with the id 142425.
+	GET /tasks/123434
+will return the specific task with the id 123.
     
 A sample response:
 
-```
-{
-  task_id: "142425",
-  task_name: "Art Direction",
-  people_id: "259",
-  project_id: "38",
-  client_name: "Walker",
-  week_start_date: "2014-01-26",
-  creation_doy: "339",
-  start_date: "2014-02-12",
-  start_doy: "43",
-  start_yr: "2014",
-  end_date: "2014-02-18",
-  end_doy: "49",
-  hours_pd: "8.0",
-  total_hours: "40.0",
-  task_days: "5",
-  task_cal_days: "7",
-  created_by: "Glenn Rogers",
-  creator_id: "2",
-  modified_by: "Glenn Rogers",
-  project_name: "Nylon",
-  sked_admin: "true",
-  is_owner: "true",
-  priority: 1
+```json
+}
+    "task_id": "214809",
+    "task_name": "User Experience",
+    "task_notes": "Reference wireframes doc.",
+    "people_id": "236",
+    "project_id": "364",
+    "client_name": "Violet City",
+    "creation_doy": "10",
+    "start_date": "2014-03-17",
+    "start_doy": "76",
+    "start_yr": "2014",
+    "end_date": "2014-03-21",
+    "end_doy": "80",
+    "hours_pd": "8.0",
+    "total_hours": "40.0",
+    "task_days": "5",
+    "task_cal_days": "5",
+    "created_by": "Glenn Baron",
+    "creator_id": "135",
+    "modified_by": "Glenn Baron",
+    "project_name": "iPhone App",
+    "priority": 0,
+
 }
 ```
 
@@ -93,55 +97,58 @@ Add Task
 
 Add a new task within your existing account.
 
-    `POST /tasks`
-  
-```
+    POST /tasks
+POST requests must be _application/x-www-form-urlencoded_ in name/value pairs. Data must also be URL encoded as appropriate.
+
+Sample request:
+
+	task_name=Design&people_id=123&project_id=364&client_name=Violet&creation_doy=10&start_date=2014-03-17&start_doy=76&start_yr=2014&end_date=2014-03-21&end_doy=80&hours_pd=8.0&total_hours=40&task_days=5&task_cal_days=5&priority=1
+
+Valid fields with example values:
+
+    task_name=Design
+    people_id=123
+    project_id=364
+    client_name=Violet
+    creation_doy=10
+    start_date=2014-03-17
+    start_doy=76
+    start_yr=2014
+    end_date=2014-03-21
+    end_doy=80
+    hours_pd=8.0
+    total_hours=40
+    task_days=5
+    task_cal_days=5
+    priority=1
+    
+A successful create record will return a `201 Created` response status with the new id:
+
+```json
 {
-  task_name: "Design",
-  people_id: "259",
-  project_id: "38",
-  client_name: "Walker",
-  week_start_date: "2014-01-26",
-  creation_doy: "339",
-  start_date: "2014-02-12",
-  start_doy: "43",
-  start_yr: "2014",
-  end_date: "2014-02-18",
-  end_doy: "49",
-  hours_pd: "8.0",
-  total_hours: "40.0",
-  task_days: "5",
-  task_cal_days: "7",
-  created_by: "Glenn Rogers",
-  creator_id: "2",
-  modified_by: "Glenn Rogers",
-  project_name: "Nylon",
-  sked_admin: "true",
-  is_owner: "true",
+	"task_id":"34342"
 }
 ```
-
-A successful addition will return a `201 Created` response.
 
 Update Task
 -----------
 
-Update an existing task within your account.
+Update an existing person within your account.
 
-    `PUT /tasks/1` will update the person with the id 1.
+    PUT /tasks/343444
+will update the task with the id 343444.
+PUT requests must be _application/x-www-form-urlencoded_ in name/value pairs. Data must also be URL encoded as appropriate.
 
-```
-{
-  task_id: "142425",
-  task_name: "New Task Name",
-}
-```
+	Update format and field values are the same as create, see above.
+
+A successful update will return a `200 Ok` response status.
 
 Delete Task
 -----------
 
-This will delete a specific task.
+Delete a specific task.
 
-    `DELETE /tasks/142425` will delete the task with the id 142425.
+    DELETE /people/343444
+will delete the task with the id 343444. _Warning: deletes can not be undone and data can not be recovered, please use with care._
     
-On success this will return a `200 Ok` response.
+A successful delete will return a `200 Ok` response status.
