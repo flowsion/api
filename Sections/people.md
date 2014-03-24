@@ -17,6 +17,7 @@ A sample response:
 		"people_id": "299",
 		"first_name": "Abel",
 		"last_name": "Anderson",
+		"name": "Abel Anderson",
 		"job_title": "Designer",
 		"avatar_file": "avatar-299",
 		"departments": [
@@ -71,6 +72,7 @@ A sample response:
     "people_id": "1",
     "first_name": "Rachel",
     "last_name": "Hammond",
+    "name": "Rachel Hammond",
     "job_title": "Designer",
     "avatar_file": "avatar-1",
     "department_name": "Creative",
