@@ -25,14 +25,13 @@ A sample response:
             "task_name": "Design",
             "task_notes": "See related ticket.",
             "people_id": "236",
+            "person_name:": "Paul Artisen"
             "project_id": "364",
+            "project_name": "Microsite"
             "client_name": "Violet City",
-            "creation_doy": "10",
             "start_date": "2014-03-17",
-            "start_doy": "76",
             "start_yr": "2014",
             "end_date": "2014-03-21",
-            "end_doy": "80",
             "hours_pd": "8.0",
             "total_hours": "40.0",
             "task_days": "5",
@@ -70,14 +69,13 @@ A sample response:
     "task_name": "User Experience",
     "task_notes": "Reference wireframes doc.",
     "people_id": "236",
+    "person_name:": "Paul Artisen"
     "project_id": "364",
+    "project_name": "Microsite"
     "client_name": "Violet City",
-    "creation_doy": "10",
     "start_date": "2014-03-17",
-    "start_doy": "76",
     "start_yr": "2014",
     "end_date": "2014-03-21",
-    "end_doy": "80",
     "hours_pd": "8.0",
     "total_hours": "40.0",
     "task_days": "5",
@@ -101,7 +99,7 @@ POST requests must be _application/x-www-form-urlencoded_ in name/value pairs. D
 
 Sample request:
 
-	task_name=Design&people_id=123&project_id=364&client_name=Violet&creation_doy=10&start_date=2014-03-17&start_doy=76&start_yr=2014&end_date=2014-03-21&end_doy=80&hours_pd=8.0&total_hours=40&task_days=5&task_cal_days=5&priority=1
+	task_name=Design&people_id=123&project_id=364&client_name=Violet&creation_doy=10&start_date=2014-03-17&start_yr=2014&end_date=2014-03-21&hours_pd=8.0&total_hours=40&task_days=5&task_cal_days=5&priority=1
 
 Valid fields with example values:
 
@@ -109,12 +107,9 @@ Valid fields with example values:
     people_id=123
     project_id=364
     client_name=Violet
-    creation_doy=10
     start_date=2014-03-17
-    start_doy=76
     start_yr=2014
     end_date=2014-03-21
-    end_doy=80
     hours_pd=8.0
     total_hours=40
     task_days=5
