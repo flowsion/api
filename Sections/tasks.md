@@ -25,9 +25,9 @@ A sample response:
             "task_name": "Design",
             "task_notes": "See related ticket.",
             "people_id": "236",
-            "person_name:": "Paul Artisen"
+            "person_name:": "Paul Artisen",
             "project_id": "364",
-            "project_name": "Microsite"
+            "project_name": "Microsite",
             "client_name": "Violet City",
             "start_date": "2014-03-17",
             "start_yr": "2014",
@@ -69,9 +69,9 @@ A sample response:
     "task_name": "User Experience",
     "task_notes": "Reference wireframes doc.",
     "people_id": "236",
-    "person_name:": "Paul Artisen"
+    "person_name:": "Paul Artisen",
     "project_id": "364",
-    "project_name": "Microsite"
+    "project_name": "Microsite",
     "client_name": "Violet City",
     "start_date": "2014-03-17",
     "start_yr": "2014",
