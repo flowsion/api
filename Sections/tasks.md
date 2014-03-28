@@ -99,21 +99,16 @@ POST requests must be _application/x-www-form-urlencoded_ in name/value pairs. D
 
 Sample request:
 
-	task_name=Design&people_id=123&project_id=364&client_name=Violet&creation_doy=10&start_date=2014-03-17&start_yr=2014&end_date=2014-03-21&hours_pd=8.0&total_hours=40&task_days=5&task_cal_days=5&priority=1
+	task_name=Design&people_id=123&project_id=364&start_date=2014-03-17&end_date=2014-03-21&hours_pd=8.0&priority=1
 
 Valid fields with example values:
 
     task_name=Design
     people_id=123
     project_id=364
-    client_name=Violet
     start_date=2014-03-17
-    start_yr=2014
     end_date=2014-03-21
     hours_pd=8.0
-    total_hours=40
-    task_days=5
-    task_cal_days=5
     priority=1
     
 A successful create record will return a `201 Created` response status with the new id:
