@@ -54,13 +54,12 @@ POST requests must be _application/x-www-form-urlencoded_ in name/value pairs. D
 
 Sample request:
 
-	holiday_name=New_Holiday&date=2014-07-01&date_doy=99
+	holiday_name=New_Holiday&date=2014-07-01
 
 Valid fields with example values:
 
     holiday_name=New Holiday
     date=2014-07-01
-    date_doy=99
 
 A successful create record will return a `201 Created` response status with the new id:
 
