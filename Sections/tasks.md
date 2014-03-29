@@ -101,15 +101,13 @@ Sample request:
 
 	task_name=Design&people_id=123&project_id=364&start_date=2014-03-17&end_date=2014-03-21&hours_pd=8.0&priority=1
 
-Valid fields with example values:
+Required fields with example values:
 
-    task_name=Design
     people_id=123
     project_id=364
     start_date=2014-03-17
     end_date=2014-03-21
-    hours_pd=8.0
-    priority=1
+    hours_pd=8
     
 A successful create record will return a `201 Created` response status with the new id:
 
