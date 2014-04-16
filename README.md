@@ -1,7 +1,7 @@
 Float API
 =========
 
-Welcome to the Float API. Use this API to integrate with your favorite third party applications and share, create and update your Float data including: 
+Welcome to the Float API. Use this API to integrate with your favorite third party and in-house applications to share, create and update your Float data including: 
 
 * [People](https://github.com/floatschedule/api/blob/master/Sections/people.md)
 * [Projects](https://github.com/floatschedule/api/blob/master/Sections/projects.md)
@@ -14,12 +14,12 @@ Visit http://www.floatschedule.com to learn more about Float.
 
 Now onto the important stuff:
 
-Getting Setup
--------------
+Getting Set Up
+--------------
 
-This is a REST-style API that uses HTTP POST data and JSON for all responses. It uses OAuth 2 for authentication.
+This is a [RESTful](http://en.wikipedia.org/wiki/Representational_state_transfer) API that uses HTTP requests and returns JSON for all responses. It uses an authentication token in the header for to make requests on behalf of a Float user. See below for connection examples.
 
-All URLs start with `https://api.floatschedule.com/api/v1/`
+All URLs start with the root URL: `https://api.floatschedule.com/api/v1/`
 
 'v1' represents the version number. If we update the version, we'll update this number and continue to support those previous. 
 
@@ -27,13 +27,33 @@ If you were to make a request for all people on your account it would look like 
 
 `https://api.floatschedule.com/api/v1/people`
 
-Content-Type must be defined in the header of requests that contain data:
+Content-Type must be defined in the header of requests that contain data. We currently support submissions as form data in name/value pairs. Set the Content-Type header to "application/x-www-form-urlencoded" like this:
 
 `Content-Type: application/x-www-form-urlencoded`
 
-The Accept header should be set to application/json since that is the supported return format of the API.
+The Accept header should be set to "application/json", since that is the supported return format of the API. (All results will be in JSON format.) That header should look like this:
 
 `Accept: application/json`
+
+Please note that all requests to the Float API must be made over HTTPS. 
+
+Authentication
+--------------
+
+When making a call to our API endpoints, you must supply an Authorization header.
+
+Add the following HTTP header to your request: 
+
+`Authorization: Bearer FLOAT_ACCESS_TOKEN` 
+
+where FLOAT_ACCESS_TOKEN is the api token you obtained from your Float Account & Billing page (currently in beta).
+
+We use the OAuth 2.0 protocol for API authentication, but only a subset of the specification is exposed. The token you receive on our web site is pre-authorized by being logged into the admin screen -- basically you pick it up from the point where you are working with an access token to make authorized requests for Float resources. 
+
+The API token you receive on our site is a Bearer token, which will grant access to Float API resources on behalf of a specific user -- in this case, the account owner. This token should be considered as sensitive as passwords and must not be shared or distributed to untrusted parties.
+
+(If you are interested in using alternative OAuth 2.0 connection methods or have questions about connecting to specific applications, please contact us at support@floatschedule.com)
+
 
 Identify Yourself
 -----------------
