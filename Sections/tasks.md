@@ -58,7 +58,7 @@ Valid fields with example values:
 
     start_day=2015-01-01
     weeks=13
-    person_id=12345
+    people_id=12345
 
 
 Get Task
