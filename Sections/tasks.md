@@ -6,7 +6,8 @@ Get Tasks
 ---------
 
 	GET /tasks
-will return all active tasks.
+Will return all active tasks that occur within a given time period. 
+Default time period is 13 weeks. Default start period is the first full week prior to the start day, which defaults to today, if no attribute is passed.
 
     
 A sample response:
