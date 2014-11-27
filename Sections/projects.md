@@ -24,13 +24,13 @@ A sample response:
             "creator_id": "18262",
             "created": "2014-11-19",
             "tags": [
-		        	{        
-                        "IPHONE APP"
+		    {        
+                        "IPHONE APP",
                         "MEDIUM"
                 	}
 		       ]
-		"non_billable": "0",
-		"active": "1",
+			"non_billable": "0",
+			"active": "1",
             "project_managers": [
                     {
                         "account_id": "135",
@@ -43,7 +43,7 @@ A sample response:
             "project_id": "224",
             "project_name": "Microsite",
             "description": "For an existing client.",	
-		...
+	...
 }
 ```
 
@@ -71,6 +71,9 @@ A sample response:
     "color": "9e7fba",
     "client_id": "212",
     "client_name": "Violet City",
+    "common": "0",
+    "creator_id": "18262",
+    "created": "2014-11-19",
         "tags": [
 	        {        
                 "IPHONE APP",
