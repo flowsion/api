@@ -12,8 +12,9 @@ A sample response:
 ```json
 {
         "holiday_id": "1533",
-        "holiday_name": "April Fool's Day",
+        "holiday_name": "Office Closed",
         "date": "2014-04-01",
+        "end_date": "2015-04-02",
         "date_doy": "31"
         },
         {
@@ -54,12 +55,13 @@ POST requests must be _application/x-www-form-urlencoded_ in name/value pairs. D
 
 Sample request:
 
-	holiday_name=New_Holiday&date=2014-07-01
+	holiday_name=New_Holiday&date=2014-07-01&end_date=2014-07-02
 
 Valid fields with example values:
 
     holiday_name=New Holiday
     date=2014-07-01
+    end_date=2014-07-02
 
 A successful create record will return a `201 Created` response status with the new id:
 
