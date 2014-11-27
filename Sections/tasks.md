@@ -40,7 +40,6 @@ A sample response:
             "created_by": "Glenn Baron",
             "creator_id": "135",
             "modified_by": "Glenn Baron",
-            "project_name": "iPhone App",
             "priority": 0,
         }
         {
@@ -92,7 +91,6 @@ A sample response:
     "created_by": "Glenn Baron",
     "creator_id": "135",
     "modified_by": "Glenn Baron",
-    "project_name": "iPhone App",
     "priority": 0,
 
 }
