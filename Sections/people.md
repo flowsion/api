@@ -15,8 +15,6 @@ A sample response:
 	"people": [
 	{
 		"people_id": "299",
-		"first_name": "Abel",
-		"last_name": "Anderson",
 		"name": "Abel Anderson",
 		"job_title": "Designer",
 		"avatar_file": "avatar-299",
@@ -41,6 +39,16 @@ A sample response:
 		"mobile": "212 444 1221",
 		"telephone": "333 222 1111",
 		"im": "abel1"
+		"wk_day_hrs": null
+		"non_wk_days": null
+		"employee_type": 1
+		"contractor": 0
+		"access_rights": 4
+		"access_id": 16099
+		"department_filter_id": "149"
+		"auto_email": 1
+		"created": "2012-01-28"
+		"active": 1
 	},
 	{
 		"people_id": "302",
@@ -70,8 +78,6 @@ A sample response:
 ```json
 {
     "people_id": "1",
-    "first_name": "Rachel",
-    "last_name": "Hammond",
     "name": "Rachel Hammond",
     "job_title": "Designer",
     "avatar_file": "avatar-1",
@@ -100,12 +106,11 @@ POST requests must be _application/x-www-form-urlencoded_ in name/value pairs. D
 
 Sample request:
 
-	first_name=Rachel&last_name=Hammond&job_title=Designer&email=rachel.hammond%40float.com
+	name=Rachel%20Hammond&job_title=Designer&email=rachel.hammond%40float.com
 
 Valid fields with example values:
 
-    first_name=Rachel
-    last_name=Hammond
+    name=Rachel%20Hammond
     job_title=Designer
     email=rachel.hammond@float.com
     department_id=2
