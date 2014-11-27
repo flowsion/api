@@ -28,8 +28,8 @@ A sample response:
                         "IPHONE APP",
                         "MEDIUM"
                 	}
-		       ],
-	"non_billable: "0",
+		       ]
+	"non_billable": "0",
 	"active": "1",
             "project_managers": [
                     {
