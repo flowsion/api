@@ -38,17 +38,17 @@ A sample response:
 		"description": "This is a description.",
 		"mobile": "212 444 1221",
 		"telephone": "333 222 1111",
-		"im": "abel1"
-		"wk_day_hrs": null
-		"non_wk_days": null
-		"employee_type": 1
-		"contractor": 0
-		"access_rights": 4
-		"access_id": 16099
-		"department_filter_id": "149"
-		"auto_email": 1
-		"created": "2012-01-28"
-		"active": 1
+		"im": "abel1",
+		"wk_day_hrs": null,
+		"non_wk_days": null,
+		"employee_type": 1,
+		"contractor": 0,
+		"access_rights": 4,
+		"access_id": 16099,
+		"department_filter_id": "149",
+		"auto_email": 1,
+		"created": "2012-01-28",
+		"active": 1,
 	},
 	{
 		"people_id": "302",
