@@ -13,7 +13,7 @@ A sample response:
 ```json
 {
 	"projects": [
-	{
+		{
             "project_id": "223",
             "project_name": "iPhone App",
             "description": "Marquee project for us. Need to consider a contractor with app dev skills.",
