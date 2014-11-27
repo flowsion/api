@@ -25,12 +25,12 @@ A sample response:
             "created": "2014-11-19",
             "tags": [
 		        	{        
-                        "IPHONE APP",
+                        "IPHONE APP"
                         "MEDIUM"
                 	}
 		       ]
-	"non_billable": "0",
-	"active": "1",
+		"non_billable": "0",
+		"active": "1",
             "project_managers": [
                     {
                         "account_id": "135",
