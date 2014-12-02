@@ -142,7 +142,7 @@ Delete Task
 
 Delete a specific task.
 
-    DELETE /people/343444
+    DELETE /tasks/343444
 will delete the task with the id 343444. _Warning: deletes can not be undone and data can not be recovered, please use with care._
     
 A successful delete will return a `200 Ok` response status.
