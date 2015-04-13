@@ -1,5 +1,6 @@
-Holidays
+Holidays and Milestones
 ========
+(format for Holidays and Milestones is the same)
 
 Get Holidays
 ------------
