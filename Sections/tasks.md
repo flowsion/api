@@ -22,20 +22,17 @@ A sample response:
         "people_id": "236",
         "tasks":
         {
-            "task_id": "214809",
+            "task_id": "2148095612",
             "task_name": "Design",
             "task_notes": "See related ticket.",
-            "people_id": "236",
+            "people_id": "23654",
             "person_name:": "Paul Artisen",
-            "project_id": "364",
+            "project_id": "364221",
             "project_name": "Microsite",
             "client_name": "Violet City",
             "start_date": "2014-03-17",
-            "start_yr": "2014",
             "end_date": "2014-03-21",
             "hours_pd": "8.0",
-            "total_hours": "40.0",
-            "task_days": "5",
             "task_cal_days": "5",
             "created_by": "Glenn Baron",
             "creator_id": "135",
@@ -43,11 +40,11 @@ A sample response:
             "priority": 0,
         }
         {
-            "task_id": "283660",
+            "task_id": "2836611230",
             "task_name": "Art Direction",
             "task_notes": null,
-            "people_id": "236",
-            "project_id": "364",
+            "people_id": "232116",
+            "project_id": "31264",
             "client_name": "Violet City",
         ...
 }
