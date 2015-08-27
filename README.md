@@ -52,7 +52,7 @@ We use the OAuth 2.0 protocol for API authentication, but only a subset of the s
 
 The API token you receive on our site is a Bearer token, which will grant access to Float API resources on behalf of a specific user -- in this case, the account owner. This token should be considered as sensitive as passwords and must not be shared or distributed to untrusted parties.
 
-(If you are interested in using alternative OAuth 2.0 connection methods or have questions about connecting to specific applications, please contact us at support@floatschedule.com)
+(If you are interested in using alternative OAuth 2.0 connection methods or have questions about connecting to specific applications, please contact us at support@float.com)
 
 
 Identify Yourself
