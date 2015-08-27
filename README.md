@@ -10,7 +10,7 @@ Welcome to the Float API. Use this API to integrate with your favorite third par
 
 (Hint: Press `t` to enable the file finder.)
 
-Visit http://www.floatschedule.com to learn more about Float.
+Visit http://www.float.com to learn more about Float.
 
 Now onto the important stuff:
 
@@ -80,5 +80,5 @@ API Improvements
 
 We're tracking all issues and feature requests for the API via the GitHub issues. You can also fork these docs and send a pull request with updates.
 
-For any other requests you can contact us at support@floatschedule.com
+For any other requests you can contact us at support@float.com
 
