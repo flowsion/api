@@ -110,11 +110,13 @@ Sample request:
 
 Valid fields with example values:
 
-    name=Rachel%20Hammond
+    * name=Rachel%20Hammond
     job_title=Designer
     email=rachel.hammond@float.com
     department_id=2
-	skills=Photoshop,Illustrator
+    skills=Photoshop,Illustrator
+
+(* = required)
 
 A successful create record will return a `201 Created` response status with the new id:
 
