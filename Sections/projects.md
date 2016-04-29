@@ -109,6 +109,7 @@ Valid fields with example values:
     color=9e7fba
     client_id=2
     tags=Microsite,Medium
+    project_manager_id=123456
 
 A successful create record will return a `201 Created` response status with the new id:
 
