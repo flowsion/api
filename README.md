@@ -25,7 +25,7 @@ All URLs start with the root URL: `https://api.float.com/api/v1/`
 
 If you were to make a request for all people on your account it would look like this:
 
-`https://api.floatschedule.com/api/v1/people`
+`https://api.float.com/api/v1/people`
 
 Content-Type must be defined in the header of requests that contain data. We currently support submissions as form data in name/value pairs. Set the Content-Type header to "application/x-www-form-urlencoded" like this:
 
