@@ -19,7 +19,7 @@ Getting Set Up
 
 This is a [RESTful](http://en.wikipedia.org/wiki/Representational_state_transfer) API that uses HTTP requests and returns JSON for all responses. It uses an authentication token in the header for to make requests on behalf of a Float user. See below for connection examples.
 
-All URLs start with the root URL: `https://api.floatschedule.com/api/v1/`
+All URLs start with the root URL: `https://api.float.com/api/v1/`
 
 'v1' represents the version number. If we update the version, we'll update this number and continue to support those previous. 
 
