@@ -10,7 +10,7 @@ Welcome to the Float API. Use this API to integrate with your favorite third par
 
 (Hint: Press `t` to enable the file finder.)
 
-Visit http://www.float.com to learn more about Float.
+Visit https://www.float.com to learn more about Float.
 
 Now onto the important stuff:
 
