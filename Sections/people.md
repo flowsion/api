@@ -36,7 +36,6 @@ A sample response:
 		],
 		"email": "abel@pixelpaddock.com",
 		"description": "This is a description.",
-		"mobile": "212 444 1221",
 		"telephone": "333 222 1111",
 		"im": "abel1",
 		"wk_day_hrs": null,
