@@ -51,7 +51,7 @@ A sample response:
 
 To access projects that are **archived** add the query string: `&active=0`.
 
-Use: `&active=1` to view all **archived** projects.
+Use: `&active=1` to view all **active** projects.
 
 Get Project
 -----------
