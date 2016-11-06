@@ -1,4 +1,4 @@
-Float API
+Float API v1
 =========
 
 Welcome to the Float API. Use this API to integrate with your favorite third party and in-house applications to share, create and update your Float data including: 
@@ -66,7 +66,9 @@ We like to know who you are so we can contact you if there's any issues. Please 
 Request Limits
 --------------
 
-You can make up to 400 requests a minute from the same account. Following this you will receive a '429 Error: too many requests by this user'. You will need to wait a brief period before attempting additional requests.
+You can make up to 400 requests per minute from the same account. Following this you will receive a '429 Error: too many requests by this user'. You will need to wait a brief period before attempting additional requests.
+
+To insure optimal performance for all users there is additionally a limit of 20 requests per second for GET requests, 10 per second for non-GET (POST, PUT, DELETE) requests.
 
 
 Other Errors
