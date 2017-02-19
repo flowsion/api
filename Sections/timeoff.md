@@ -1,6 +1,6 @@
 Time Off
 ========
-The Float API supports both Time Off Types (e.g. Sick Leave, Paid Time Off, and Parental Leave) and Time Off (The assignment of time off to your team).
+The Float API supports both Time Off Types (e.g. Sick Leave, Paid Time Off, Holidays) and Time Off, the assignment of these Time Off Types to your team.
 
 Get Time Off
 ------------
