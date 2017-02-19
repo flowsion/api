@@ -1,6 +1,6 @@
-Holidays and Milestones
+Public Holidays and Milestones
 ========
-(format for Holidays and Milestones is the same)
+(format for Public Holidays and Milestones is the same)
 
 Get Holidays
 ------------
@@ -27,7 +27,7 @@ A sample response:
 }
 ```
 
-Get Holiday
+Get Public Holiday
 -----------
 
 Return a specific holiday identified by the holiday id.
@@ -46,7 +46,7 @@ A sample response:
 }
 ```
 
-Add Holiday
+Add Public Holiday
 -----------
 
 Add a new holiday within your existing account.
@@ -72,7 +72,7 @@ A successful create record will return a `201 Created` response status with the 
 }
 ```
 
-Update Holiday
+Update Public Holiday
 --------------
 
 Update an existing holiday within your account.
@@ -85,7 +85,7 @@ PUT requests must be _application/x-www-form-urlencoded_ in name/value pairs. Da
 
 A successful update will return a `200 Ok` response status.
 
-Delete Holiday
+Delete Public Holiday
 --------------
 
 Delete a specific holiday.
