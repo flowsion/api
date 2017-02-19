@@ -6,7 +6,8 @@ Welcome to the Float API. Use this API to integrate with your favorite third par
 * [People](https://github.com/floatschedule/api/blob/master/Sections/people.md)
 * [Projects](https://github.com/floatschedule/api/blob/master/Sections/projects.md)
 * [Tasks](https://github.com/floatschedule/api/blob/master/Sections/tasks.md)
-* [Holidays and Milestones](https://github.com/floatschedule/api/blob/master/Sections/holidays.md)
+* [Time Off](https://github.com/floatschedule/api/blob/master/Sections/timeoff.md) 
+* [Public Holidays and Milestones](https://github.com/floatschedule/api/blob/master/Sections/holidays.md)
 
 (Hint: Press `t` to enable the file finder.)
 
