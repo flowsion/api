@@ -67,7 +67,7 @@ POST requests must be _application/x-www-form-urlencoded_ in name/value pairs. D
 
 Sample request:
 
-	timeoff_type_id=2333&start_date=2014-07-01&end_date=2014-07-02&hours=8&timeoff_notes=Not%20feeling%20well&person_id=41444
+	timeoff_type_id=2333&start_date=2014-07-01&end_date=2014-07-02&hours=8&timeoff_notes=Not%20feeling%20well&people_id=41444
 
 Valid fields with example values:
 
@@ -75,7 +75,7 @@ Valid fields with example values:
     start_date=2014-07-01
     end_date=2014-07-02
     hours=7.5
-    person_id=23334
+    people_id=23334
 
 Full-day Time Off example values:
 
@@ -83,7 +83,7 @@ Full-day Time Off example values:
     start_date=2014-07-01
     end_date=2014-07-02
     full_day=1
-    person_id=23333
+    people_id=23333
 
 A successful create record will return a `201 Created` response status with the new id:
 
