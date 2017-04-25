@@ -26,8 +26,8 @@ A sample response:
         "repeat_end":"0000-00-00",
         "full_day":null,
         "people_id":"51515"
-        },
-        {
+},
+{
         "timeoff_id": "12333",
         "timeoff_type_id": "1533",
         "start_date": "2017-02-04",
