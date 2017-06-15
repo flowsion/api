@@ -16,7 +16,7 @@ A sample response:
 {
     "position": "full",
     "start_doy": "75",
-    "start_yr": "2014",
+    "start_yr": "2017",
     "people": [
     {
         "people_id": "236",
@@ -57,7 +57,7 @@ A sample response:
 <b>Filters for /tasks </b>
 Valid fields with example values:
 
-    start_day=2015-01-01
+    start_day=2017-01-01
     weeks=13
     people_id=12345
 
@@ -115,8 +115,8 @@ Required fields with example values:
 
     people_id=123
     project_id=364
-    start_date=2014-03-17
-    end_date=2014-03-21
+    start_date=2017-03-17
+    end_date=2017-03-21
     hours_pd=8
     
 A successful create record will return a `201 Created` response status with the new id:
