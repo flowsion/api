@@ -30,7 +30,7 @@ A sample response:
             "project_id": "364221",
             "project_name": "Microsite",
             "client_name": "Violet City",
-            "start_date": "2017-06-12"
+            "start_date": "2017-06-12",
 	    "start_time": "10:00am",
             "start_yr": "2017",
             "task_day_date": "2017-06-12",
@@ -50,7 +50,7 @@ A sample response:
             "task_notes": null,
             "people_id": "232116",
             "project_id": "31264",
-            "client_name": "Violet City",
+            "client_name": "Violet City"
         ...
 }
 ```
