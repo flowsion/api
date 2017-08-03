@@ -3,7 +3,7 @@ Float API v1
 
 Welcome to the Float API V1.
 
-*Note: Float API V1 was replaced by API V3 in July, 2017. We will continue to support V1 for the foreseeable future, however if you're considering a new integration please refer to API V3 at: http://dev.float.com/*
+*Note: Float API V1 was superseded by API V3 in July, 2017. We will continue to support V1 for the foreseeable future, however if you're implementing a new integration please refer to API V3 at: http://dev.float.com/*
 
 Use this API to integrate with your favorite third party and in-house applications to share, create and update your Float data including: 
 
